@@ -1,0 +1,147 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container-phones {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  margin: 0 auto;
+  flex-direction: column;
+  min-height: 478px;
+  width: 50vw;
+}
+
+.products-button {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  padding: 5px;
+  margin: 10px 0 10px 0px ;
+}
+
+.tables {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tables td, .tables th {
+  padding: 12px 15px;
+  text-align: center;
+}
+
+tr {
+  border: 2px solid #dbd8d8;
+}
+
+tbody tr:hover {
+  background-color: #DAE3ED;
+}
+
+.trash, .edit {
+  border: none;
+  height: 24px;
+  opacity: 1;
+  width: 24px;
+  background-color: transparent;
+  outline: none;
+}
+
+.trash:hover, .edit:hover {
+  opacity:0.5;
+}
+
+.add {
+  height: 40px;
+  width: 155px;
+  border: 1px solid #1D1D1D;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  color: #1D1D1D;
+  text-transform: uppercase;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+.add:hover {
+  color:#1D1D1D;
+  font-weight: bold;
+}
+
+.spans {
+  font-size: 25px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  height: 64px;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 60px;
+  margin: 0 auto;
+  width: 100px;
+}
+
+@media(max-width: 580px) {
+  body {
+    font-size: 10px;
+    line-height: 10px;
+  }
+}
+
+@media(max-width: 500px) {
+  .tables thead, hr {
+    display: none;
+  }
+
+  .tables, .tables tbody, .tables td {
+    display: block;
+    width: 250px;
+  }
+
+  .tables tr {
+    margin-bottom: 15px;
+  }
+
+  .tables td {
+    text-align: right;
+    padding-left: 50%;
+    text-align: center;
+    position: relative;
+    border: 1px solid #dbd8d8;
+  }
+
+  .tables td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    width: 50%;
+    padding-left: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: left;
+  }
+
+  .products-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .add {
+    height: 30px;
+    width: 120px;
+  }
+}

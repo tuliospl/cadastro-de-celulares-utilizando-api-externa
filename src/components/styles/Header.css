@@ -1,0 +1,25 @@
+.container-Header {
+  align-items: center;
+  background: #054A91 0% 0% no-repeat padding-box;
+  display: flex;
+  height: 87px;
+  justify-content: center;
+  width: 100%;
+}
+
+.div-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logotipo {
+text-align: left;
+font: normal normal bold 56px/12px Nunito;
+letter-spacing: 0px;
+color: #DAE3ED;
+}
+
+.altSvg {
+  filter: invert(100%);
+}
